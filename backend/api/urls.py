@@ -16,6 +16,7 @@ router.register(r'pagos', PagoViewSet, basename='pago')
 router.register(r'gastos', GastoViewSet, basename='gasto')
 
 urlpatterns = [
+    path('', lambda request: JsonResponse({"message": "API Condominio activa"})),
     path('', include(router.urls)),
     path('auth/login/', obtain_auth_token, name='api_token_auth'),
     path('dashboard/stats/', dashboard_stats, name='dashboard_stats'),
