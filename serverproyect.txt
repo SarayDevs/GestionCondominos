@@ -1,0 +1,6 @@
+Paso 3: Iniciar servidores
+Terminal 1 (Backend):
+cd backend
+python manage.py runserver
+Terminal 2 (Frontend):
+npm run dev
