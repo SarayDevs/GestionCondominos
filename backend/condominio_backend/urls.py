@@ -2,6 +2,7 @@
 URL configuration for condominio_backend project.
 """
 from django.contrib import admin
+from django.http import JsonResponse
 from django.urls import path, include
 
 urlpatterns = [
